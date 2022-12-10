@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #F5F5F5;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+}
+
+p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+  margin: 0;
+}
+
+.container {
+  width: 375px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+.container header .headerContainer {
+  height: 67px;
+  border-bottom: 1px solid #C6C6C6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+.container main section .content-container {
+  display: flex;
+  flex-direction: column;
+}
+.container main section .content-container .user-location {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 11px;
+  height: 55px;
+}
+.container main section .content-container .user-location img {
+  border-radius: 50%;
+  height: 34px;
+  width: 34px;
+  margin-right: 7px;
+}
+.container main section .content-container .main-image .main-photo {
+  width: 375px;
+  height: 375px;
+}
+.container main section .content-container .main-image .details {
+  margin-left: 10px;
+  margin: 21px 0 11.87px 10px;
+}
+.container main section .content-container .main-image .details a {
+  margin-right: 20px;
+}/*# sourceMappingURL=style.css.map */
