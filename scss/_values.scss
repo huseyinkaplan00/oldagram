@@ -11,6 +11,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #F5F5F5;
+    ;
 
 }
 
@@ -35,4 +36,28 @@ h5,
 p,
 a {
     margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+
+    margin-top: 67px;
+    margin-bottom: 25px;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(6, 5, 5);
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }

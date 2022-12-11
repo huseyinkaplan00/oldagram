@@ -34,45 +34,122 @@ a {
   margin: 0;
 }
 
-.container {
-  width: 375px;
-  background: #ffffff;
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  margin-top: 67px;
+  margin-bottom: 25px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(6, 5, 5);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.main-container {
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  overflow-y: scroll;
 }
-.container header .headerContainer {
+.main-container .container {
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+.main-container .container header {
+  margin-bottom: 67px;
+}
+.main-container .container header .headerContainer {
+  position: fixed;
+  box-sizing: border-box;
+  top: 0;
+  width: 375px;
   height: 67px;
   border-bottom: 1px solid #C6C6C6;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 16px;
+  background: #ffffff;
 }
-.container main section .content-container {
+.main-container .container section {
+  background: #ffffff;
+}
+.main-container .container section .content-container {
   display: flex;
   flex-direction: column;
 }
-.container main section .content-container .user-location {
+.main-container .container section .content-container .user-location {
   box-sizing: border-box;
   display: flex;
   align-items: center;
   padding: 11px;
   height: 55px;
 }
-.container main section .content-container .user-location img {
+.main-container .container section .content-container .user-location img {
   border-radius: 50%;
   height: 34px;
   width: 34px;
   margin-right: 7px;
 }
-.container main section .content-container .main-image .main-photo {
-  width: 375px;
+.main-container .container section .content-container .main-image .main-photo {
+  width: 100%;
   height: 375px;
 }
-.container main section .content-container .main-image .details {
-  margin-left: 10px;
-  margin: 21px 0 11.87px 10px;
+.main-container .container section .content-container .main-image .details {
+  display: flex;
+  flex-direction: column;
+  margin: 21px 19px 16px 10px;
 }
-.container main section .content-container .main-image .details a {
-  margin-right: 20px;
+.main-container .container section .content-container .main-image .details .buttons {
+  margin-bottom: 11.87px;
+}
+.main-container .container section .content-container .main-image .details .buttons a {
+  margin-right: 18px;
+  text-decoration: none;
+}
+.main-container .container section .content-container .main-image .details .buttons a #like-btn {
+  stroke: black;
+  stroke-width: 2.32996;
+}
+.main-container .container section .content-container .main-image .details .buttons a #like-btn:hover {
+  fill: red;
+  stroke: red;
+}
+.main-container .container section .content-container .main-image .details .buttons a #comment-btn {
+  fill: black;
+}
+.main-container .container section .content-container .main-image .details .buttons a #comment-btn:hover {
+  fill: rgb(82, 5, 235);
+}
+.main-container .container section .content-container .main-image .details .buttons a #dm-icon {
+  stroke: black;
+}
+.main-container .container section .content-container .main-image .details .buttons a #dm-icon:hover {
+  stroke: rgb(16, 47, 221);
+}
+.main-container .container section .content-container .main-image .details .comment-like #likes {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  margin-bottom: 12px;
+}
+.main-container .container section .content-container .main-image .details .comment-like .user-comment {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+}
+.main-container .container section .content-container .main-image .details .comment-like .user-comment .bold {
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */
