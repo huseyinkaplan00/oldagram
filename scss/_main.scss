@@ -82,16 +82,21 @@
                                 text-decoration: none;
 
 
-                                #like-btn {
+                                .like-btn {
                                     stroke: black;
                                     stroke-width: 2.32996;
-
-                                    &:hover {
-                                        fill: red;
-                                        stroke: red;
-
-                                    }
                                 }
+
+                                .like-btnTwo {
+                                    fill: red;
+                                    stroke: red;
+                                    stroke-width: 2.32996;
+
+
+                                }
+
+
+
 
 
 
@@ -99,7 +104,7 @@
                                     fill: black;
 
                                     &:hover {
-                                        fill: rgb(82, 5, 235);
+                                        fill: rgb(89, 7, 251);
 
                                     }
 
@@ -117,7 +122,7 @@
                         }
 
                         .comment-like {
-                            #likes {
+                            #like-count {
                                 font-weight: 700;
                                 font-size: 13px;
                                 line-height: 16px;

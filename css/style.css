@@ -54,6 +54,15 @@ a {
   background: #555;
 }
 
+.hide {
+  display: none;
+}
+
+.like-href-display {
+  display: inline;
+  background-color: red;
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
@@ -118,19 +127,20 @@ a {
   margin-right: 18px;
   text-decoration: none;
 }
-.main-container .container section .content-container .main-image .details .buttons a #like-btn {
+.main-container .container section .content-container .main-image .details .buttons a .like-btn {
   stroke: black;
   stroke-width: 2.32996;
 }
-.main-container .container section .content-container .main-image .details .buttons a #like-btn:hover {
+.main-container .container section .content-container .main-image .details .buttons a .like-btnTwo {
   fill: red;
   stroke: red;
+  stroke-width: 2.32996;
 }
 .main-container .container section .content-container .main-image .details .buttons a #comment-btn {
   fill: black;
 }
 .main-container .container section .content-container .main-image .details .buttons a #comment-btn:hover {
-  fill: rgb(82, 5, 235);
+  fill: rgb(89, 7, 251);
 }
 .main-container .container section .content-container .main-image .details .buttons a #dm-icon {
   stroke: black;
@@ -138,7 +148,7 @@ a {
 .main-container .container section .content-container .main-image .details .buttons a #dm-icon:hover {
   stroke: rgb(16, 47, 221);
 }
-.main-container .container section .content-container .main-image .details .comment-like #likes {
+.main-container .container section .content-container .main-image .details .comment-like #like-count {
   font-weight: 700;
   font-size: 13px;
   line-height: 16px;
