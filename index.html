@@ -111,13 +111,63 @@
 
                                 </a>
                                 <a class="popup" id="dm-icon-a" href="#">
-                                    <span class="popup-text" id="pop-up">deneme pop up :)</span>
+
+
                                     <svg id="dm-icon" width="25" height="21" viewBox="0 0 25 21" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M9.65797 9.54347L11.8283 19.3097C11.9424 19.8236 12.6255 19.9344 12.8964 19.4831L22.8075 2.96445C23.0405 2.57621 22.7608 2.08228 22.308 2.08228H2.52787C1.98708 2.08228 1.73819 2.75508 2.14879 3.10702L9.65797 9.54347ZM9.65797 9.54347L22.0933 2.70404"
                                             stroke-width="2.32996" />
                                     </svg>
+                                    <div class="popup-text" id="pop-up">
+                                        <div class="popup-main-container">
+                                            <div class="one">
+                                                <div class="item">
+
+                                                    <div class="user-dm"> <img class="profile"
+                                                            src="./images/Gustave Courbet.svg" alt="">
+                                                    </div>
+                                                    <div class="name-dm">
+                                                        Gustave Courbet
+                                                    </div>
+                                                </div>
+                                                <div class="icondm-pop"><img class="dm-icon-in" src="./images/share.svg"
+                                                        alt=""> </div>
+                                            </div>
+
+
+
+                                            <div class="one">
+                                                <div class="item">
+
+                                                    <div class="user-dm"> <img class="profile"
+                                                            src="./images/Vincent van Gogh.svg" alt="">
+                                                    </div>
+                                                    <div class="name-dm">
+                                                        Vincent van Gogh
+                                                    </div>
+                                                </div>
+                                                <div class="icondm-pop"><img class="dm-icon-in" src="./images/share.svg"
+                                                        alt=""> </div>
+                                            </div>
+
+
+
+                                            <div class="one">
+                                                <div class="item">
+
+                                                    <div class="user-dm"> <img class="profile"
+                                                            src="./images/Joseph Ducreux.svg" alt="">
+                                                    </div>
+                                                    <div class="name-dm">
+                                                        Joseph Ducreux
+                                                    </div>
+                                                </div>
+                                                <div class="icondm-pop"><img class="dm-icon-in" src="./images/share.svg"
+                                                        alt=""> </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
                                 </a>
                             </div>
@@ -125,6 +175,14 @@
                                 <p id="like-count">22,492 likes</p>
                                 <p class="user-comment"><span class="bold">vincey1853</span> just took a few mushrooms
                                     lol</p>
+                                <div class="user-comment-input">
+                                    <p class="user-comment two hide"><span class="bold"> gus1819 </span>
+
+                                        <input placeholder="write your comment 👌" id="input-comment" type="text">
+                                    </p>
+                                    <a id="dm-submit-btn" class="hide" href="#"> <img src="./images/share.svg"
+                                            alt=""></a>
+                                </div>
                             </div>
                         </div>
 
@@ -203,7 +261,7 @@
                                     </svg>
 
                                 </a>
-                                <a href="#">
+                                <a onclick="commentBtn()" href="#">
                                     <svg id="comment-btn" width="25" height="24" viewBox="0 0 25 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <mask id="path-1-outside-1_10_29" maskUnits="userSpaceOnUse" x="0.299622"

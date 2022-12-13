@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap");
+.showW {
+  visibility: visible;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -9,6 +13,10 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #F5F5F5;
+}
+
+input {
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 h1 {
@@ -183,6 +191,93 @@ a {
 .main-container .container section .content-container .main-image .details .buttons {
   margin-bottom: 11.87px;
 }
+.main-container .container section .content-container .main-image .details .buttons .popup {
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.main-container .container section .content-container .main-image .details .buttons .popup .popup-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 110%;
+  left: 90%;
+  visibility: hidden;
+  width: 160px;
+  height: 160px;
+  background-color: rgba(4, 4, 4, 0.612);
+  border: 2px solid black;
+  border-end-end-radius: 6px;
+  border-start-end-radius: 6px;
+  border-top-left-radius: 6px;
+  padding: 10px;
+  z-index: 1;
+}
+.main-container .container section .content-container .main-image .details .buttons .popup .popup-text .popup-main-container {
+  border-radius: 6px;
+  font-size: 10px;
+  width: 150px;
+}
+.main-container .container section .content-container .main-image .details .buttons .popup .popup-text .popup-main-container .one {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  padding-bottom: 5px;
+  background-color: rgba(240, 238, 234, 0.211);
+  border-radius: 6px;
+  margin-bottom: 9px;
+}
+.main-container .container section .content-container .main-image .details .buttons .popup .popup-text .popup-main-container .one:hover {
+  background-color: rgba(240, 238, 234, 0.768);
+  transition: 0.4s ease-in-out;
+}
+.main-container .container section .content-container .main-image .details .buttons .popup .popup-text .popup-main-container .one .item {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.main-container .container section .content-container .main-image .details .buttons .popup .popup-text .popup-main-container .one .item .user-dm .profile {
+  border-radius: 50%;
+}
+.main-container .container section .content-container .main-image .details .buttons .popup .popup-text .popup-main-container .one .item .name-dm {
+  margin: 0 5px;
+}
+.main-container .container section .content-container .main-image .details .buttons .popup .popup-text .popup-main-container .one .icondm-pop .dm-icon-in {
+  width: 16px;
+}
+.main-container .container section .content-container .main-image .details .buttons .popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+}
+.main-container .container section .content-container .main-image .details .buttons .popup .hide {
+  visibility: hidden;
+}
+.main-container .container section .content-container .main-image .details .buttons .popup .showW {
+  visibility: visible;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .main-container .container section .content-container .main-image .details .buttons a {
   margin-right: 18px;
   text-decoration: none;
@@ -222,4 +317,27 @@ a {
 }
 .main-container .container section .content-container .main-image .details .comment-like .user-comment .bold {
   font-weight: 700;
+}
+.main-container .container section .content-container .main-image .details .comment-like .user-comment-input {
+  display: flex;
+  margin-top: 5px;
+}
+.main-container .container section .content-container .main-image .details .comment-like .user-comment-input .dm-submit-btn {
+  cursor: pointer;
+}
+.main-container .container section .content-container .main-image .details .comment-like .user-comment-input a img {
+  width: 18px;
+}
+.main-container .container section .content-container .main-image .details .comment-like .user-comment-input input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid black;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+  margin-right: 5px;
+}
+.main-container .container section .content-container .main-image .details .comment-like .user-comment-input input:focus {
+  outline: none;
 }/*# sourceMappingURL=style.css.map */
