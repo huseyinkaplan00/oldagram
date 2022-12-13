@@ -17,6 +17,14 @@
 <body>
 
     <div class="main-container">
+
+
+
+
+
+
+
+
         <div class="container">
 
             <header>
@@ -44,8 +52,31 @@
 
 
                     <div class="main-image">
-                        <img class="main-photo" src="./images/post-image.svg" alt="oldagram user's shared photo">
+
+                        <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;"
+                            version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs>
+                                <symbol id="icon-heart" viewBox="0 0 32 32">
+                                    <path
+                                        d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z">
+                                    </path>
+                                </symbol>
+                            </defs>
+                        </svg>
+
+
+                        <div class="post">
+                            <svg class="icon icon-heart">
+                                <use xlink:href="#icon-heart"></use>
+                            </svg>
+                            <img class="main-photo" src="./images/post-image.svg" alt="oldagram user's shared photo">
+
+                        </div>
+
+
+
                         <div class="details">
+
                             <div class="buttons">
 
                                 <a id="like-button" href="#">
@@ -79,7 +110,8 @@
 
 
                                 </a>
-                                <a href="#">
+                                <a class="popup" id="dm-icon-a" href="#">
+                                    <span class="popup-text" id="pop-up">deneme pop up :)</span>
                                     <svg id="dm-icon" width="25" height="21" viewBox="0 0 25 21" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -112,6 +144,36 @@
         </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div class="container">
 
 
@@ -128,6 +190,8 @@
 
 
                     <div class="main-image">
+
+
                         <img class="main-photo" src="./images/post-image (1).svg" alt="oldagram user's shared photo">
                         <div class="details">
                             <div class="buttons">
