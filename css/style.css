@@ -544,6 +544,12 @@ a {
   line-height: 16px;
   margin-bottom: 12px;
 }
+.main-container .container section .content-container .main-image .details .comment-like #like-countThree {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  margin-bottom: 12px;
+}
 .main-container .container section .content-container .main-image .details .comment-like .user-comment {
   font-weight: 400;
   font-size: 13px;

@@ -2,10 +2,10 @@ const likeBtn = document.getElementById("like-button")
 const likeBtnTwoTwo = document.getElementById("like-button-two-two")
 const likeBtnThree = document.getElementById("like-buttonThree")
 
+
 const liked = document.getElementById("change")
 const likedTwoTwo = document.getElementById("changeTwo")
 const likedThree = document.getElementById("changeThree")
-
 
 
 const likeCount = document.getElementById("like-count")
@@ -13,22 +13,14 @@ const likeCountTwo = document.getElementById("like-countTwo")
 const likeCountThree = document.getElementById("like-countThree")
 
 
-
-
-
 const img = document.querySelector(".main-photo");
 const imgTwo = document.querySelector(".main-photoTwo");
 const imgThree = document.querySelector(".main-photoThree");
 
 
-
-
 const icon = document.querySelector(".icon");
 const iconTwo = document.querySelector(".iconTwo");
 const iconThree = document.querySelector(".iconThree");
-
-
-
 
 
 let commentBtn = document.getElementById("comment-btn")
@@ -46,17 +38,14 @@ const dmSubmitBtnTwo = document.getElementById("dm-submit-btnTwo")
 const dmSubmitBtnThree = document.getElementById("dm-submit-btnThree")
 
 
-
 let input = document.getElementById("input-comment")
 let inputTwo = document.getElementById("input-commentTwo")
 let inputThree = document.getElementById("input-commentThree")
 
 
-
 const dmBtn = document.getElementById("dm-icon-a")
 const dmBtnTwo = document.getElementById("dm-icon-b")
 const dmBtnThree = document.getElementById("dm-icon-c")
-
 
 
 
@@ -71,9 +60,10 @@ const userImage = document.querySelector(".user-image")
 
 
 
-
 let inputArray = []
 const leadsFromLocalStorage = JSON.parse(localStorage.getItem("inputkey"))
+
+
 
 //
 likeBtn.addEventListener("click", function () {
@@ -115,8 +105,18 @@ likeBtnTwoTwo.addEventListener("click", function () {
 
 likeBtnThree.addEventListener("click", function () {
 
-    console.log("tikkk")
 
+    likedThree.classList.toggle("like-btnTwo")
+    if (likeCountThree.innerHTML === "15,137 likes") {
+        likeCountThree.innerHTML = "15,138 likes"
+        iconThree.classList.add("like");
+        setTimeout(() => {
+            iconThree.classList.remove("like");
+        }, 1200);
+    }
+    else {
+        likeCountThree.innerHTML = "15,137 likes"
+    }
 
 })
 
@@ -125,7 +125,6 @@ likeBtnThree.addEventListener("click", function () {
 
 
 //
-
 
 
 
@@ -207,14 +206,6 @@ imgThree.addEventListener("dblclick", () => {
 
 
 
-
-
-
-
-
-
-
-
 //
 commentBtn.addEventListener("click", function () {
 
@@ -234,6 +225,7 @@ commentBtnThree.addEventListener("click", function () {
     dmSubmitBtnThree.classList.toggle("hide")
 })
 //
+
 
 
 //
@@ -300,8 +292,6 @@ dmSubmitBtnThree.addEventListener("click", function () {
 
 
 
-
-
 //
 
 
@@ -332,9 +322,6 @@ dmBtnThree.addEventListener("click", function () {
 
 
 //
-
-
-
 
 
 
