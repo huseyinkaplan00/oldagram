@@ -45,10 +45,19 @@ let inputTwo = document.getElementById("input-commentTwo")
 
 
 
-
-
 const dmBtn = document.getElementById("dm-icon-a")
+const dmBtnTwo = document.getElementById("dm-icon-b")
+
+
+
+
 const popUp = document.getElementById("pop-up")
+const popUpTwo = document.getElementById("pop-upTwo")
+
+
+
+
+
 
 
 
@@ -170,6 +179,19 @@ dmBtn.addEventListener("click", function () {
     popUp.classList.toggle("show")
 
 })
+
+
+dmBtnTwo.addEventListener("click", function () {
+
+
+    popUpTwo.classList.toggle("show")
+
+})
+
+
+
+
+
 
 
 
