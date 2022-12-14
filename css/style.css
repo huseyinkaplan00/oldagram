@@ -583,12 +583,18 @@ a {
   outline: none;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 320px) {
   .main-container {
     overflow: hidden !important;
   }
   .container {
     width: 417px !important;
+  }
+  .close-pop-text {
+    width: 116px !important;
+  }
+  .close-pop-text::after {
+    left: 69% !important;
   }
   .headerContainer {
     width: 417px !important;
