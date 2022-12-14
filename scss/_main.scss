@@ -197,6 +197,18 @@
                             }
                         }
 
+                        .iconThree {
+                            position: absolute;
+                            display: inline-block;
+                            width: 128px;
+                            opacity: 0;
+                            fill: rgb(232, 232, 232);
+
+                            &.like {
+                                animation: 2s like-heart-animation ease-in-out forwards;
+                            }
+                        }
+
 
 
                         .main-photo {
@@ -211,6 +223,17 @@
                         }
 
                         .main-photoTwo {
+                            width: 100%;
+                            cursor: pointer;
+                            user-select: none;
+                            -moz-user-select: none;
+                            -khtml-user-select: none;
+                            -webkit-user-select: none;
+                            -o-user-select: none;
+
+                        }
+
+                        .main-photoThree {
                             width: 100%;
                             cursor: pointer;
                             user-select: none;
@@ -536,6 +559,16 @@
                                 }
 
                                 #comment-btnTwo {
+                                    fill: black;
+
+                                    &:hover {
+                                        fill: rgb(89, 7, 251);
+
+                                    }
+
+                                }
+
+                                #comment-btnThree {
                                     fill: black;
 
                                     &:hover {
