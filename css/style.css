@@ -185,7 +185,7 @@ a {
 }
 .main-container .container header .headerContainer .user-image .profile-photo:hover {
   transform: scale(0.9);
-  border: 3px solid black;
+  border: 3px dashed black;
 }
 .main-container .container section {
   background: #ffffff;
