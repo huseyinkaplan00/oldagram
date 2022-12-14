@@ -1,8 +1,30 @@
 const likeBtn = document.getElementById("like-button")
+const likeBtnTwoTwo = document.getElementById("like-button-two-two")
+
 const liked = document.getElementById("change")
+const likedTwoTwo = document.getElementById("changeTwo")
+
+
+
 const likeCount = document.getElementById("like-count")
+const likeCountTwo = document.getElementById("like-countTwo")
+
+
+
+
+
 const img = document.querySelector(".main-photo");
+const imgTwo = document.querySelector(".main-photoTwo");
+
+
+
+
 const icon = document.querySelector(".icon");
+const iconTwo = document.querySelector(".iconTwo");
+
+
+
+
 const dmBtn = document.getElementById("dm-icon-a")
 const popUp = document.getElementById("pop-up")
 let input = document.getElementById("input-comment")
@@ -21,9 +43,6 @@ const leadsFromLocalStorage = JSON.parse(localStorage.getItem("inputkey"))
 
 
 img.addEventListener("dblclick", () => {
-
-
-
     icon.classList.add("like");
     setTimeout(() => {
         icon.classList.remove("like");
@@ -43,8 +62,33 @@ img.addEventListener("dblclick", () => {
     }
 });
 
+imgTwo.addEventListener("dblclick", () => {
+
+    iconTwo.classList.add("like");
+    setTimeout(() => {
+        iconTwo.classList.remove("like");
+    }, 1200);
+
+    likedTwoTwo.classList.toggle("like-btnTwo")
+
+    if (likeCountTwo.innerHTML === "12,502 likes") {
+        likeCountTwo.innerHTML = "12,502 likes"
+        icon.classList.add("like");
+        setTimeout(() => {
+            icon.classList.remove("like");
+        }, 1200);
+
+    } else {
+        likeCountTwo.innerHTML = "12,502 likes"
+    }
 
 
+
+
+})
+
+
+//
 likeBtn.addEventListener("click", function () {
     liked.classList.toggle("like-btnTwo")
 
@@ -65,7 +109,23 @@ likeBtn.addEventListener("click", function () {
 
 })
 
+likeBtnTwoTwo.addEventListener("click", function () {
 
+    likedTwoTwo.classList.toggle("like-btnTwo")
+    if (likeCountTwo.innerHTML === "12,502 likes") {
+        likeCountTwo.innerHTML = "12,502 likes"
+        iconTwo.classList.add("like");
+        setTimeout(() => {
+            iconTwo.classList.remove("like");
+        }, 1200);
+    }
+    else {
+        likeCountTwo.innerHTML = "12,502 likes"
+    }
+
+
+})
+//
 
 dmBtn.addEventListener("click", function () {
 

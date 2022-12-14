@@ -227,7 +227,28 @@ a {
   -webkit-animation: 2s like-heart-animation ease-in-out forwards;
           animation: 2s like-heart-animation ease-in-out forwards;
 }
+.main-container .container section .content-container .main-image .post .iconTwo {
+  position: absolute;
+  display: inline-block;
+  width: 128px;
+  opacity: 0;
+  fill: rgb(232, 232, 232);
+}
+.main-container .container section .content-container .main-image .post .iconTwo.like {
+  -webkit-animation: 2s like-heart-animation ease-in-out forwards;
+          animation: 2s like-heart-animation ease-in-out forwards;
+}
 .main-container .container section .content-container .main-image .post .main-photo {
+  width: 100%;
+  cursor: pointer;
+  -ms-user-select: none;
+      user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+.main-container .container section .content-container .main-image .post .main-photoTwo {
   width: 100%;
   cursor: pointer;
   -ms-user-select: none;
