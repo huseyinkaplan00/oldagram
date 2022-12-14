@@ -40,7 +40,8 @@ const dmSubmitBtnTwo = document.getElementById("dm-submit-btnTwo")
 
 
 
-
+let input = document.getElementById("input-comment")
+let inputTwo = document.getElementById("input-commentTwo")
 
 
 
@@ -48,7 +49,7 @@ const dmSubmitBtnTwo = document.getElementById("dm-submit-btnTwo")
 
 const dmBtn = document.getElementById("dm-icon-a")
 const popUp = document.getElementById("pop-up")
-let input = document.getElementById("input-comment")
+
 
 
 
@@ -186,7 +187,7 @@ commentBtnTwo.addEventListener("click", function () {
 })
 
 
-dmSubmitBtn.addEventListener("click", function deneme() {
+dmSubmitBtn.addEventListener("click", function () {
 
 
     let valueIn = input.value
@@ -205,6 +206,28 @@ dmSubmitBtn.addEventListener("click", function deneme() {
         }
     }
 })
+
+
+dmSubmitBtnTwo.addEventListener("click", function () {
+
+    let valueIn = inputTwo.value
+    let pushed = inputArray.push(valueIn)
+    let pushedLocal = localStorage.setItem("inputkey", JSON.stringify(inputArray))
+
+    let stored = JSON.parse(localStorage.getItem("inputkey"))
+    console.log(stored)
+
+    for (let i = 0; i < inputArray.length; i++) {
+        if (valueIn === "") {
+            alert("Please Write Something :)")
+        } else {
+            userCommentTwo.innerHTML = `<span class="bold">gus1819</span>  ${inputArray[i]}`
+            dmSubmitBtnTwo.innerHTML = ""
+        }
+    }
+})
+
+
 
 userImage.addEventListener("click", function () {
 
