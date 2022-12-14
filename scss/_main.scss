@@ -414,6 +414,16 @@
 
                                 }
 
+                                #comment-btnTwo {
+                                    fill: black;
+
+                                    &:hover {
+                                        fill: rgb(89, 7, 251);
+
+                                    }
+
+                                }
+
 
 
 
@@ -434,6 +444,13 @@
 
                         .comment-like {
                             #like-count {
+                                font-weight: 700;
+                                font-size: 13px;
+                                line-height: 16px;
+                                margin-bottom: 12px;
+                            }
+
+                            #like-countTwo {
                                 font-weight: 700;
                                 font-size: 13px;
                                 line-height: 16px;

@@ -25,13 +25,49 @@ const iconTwo = document.querySelector(".iconTwo");
 
 
 
+
+let commentBtn = document.getElementById("comment-btn")
+let commentBtnTwo = document.getElementById("comment-btnTwo")
+
+
+const userComment = document.querySelector(".two ")
+const userCommentTwo = document.querySelector(".twotwo")
+
+
+
+const dmSubmitBtn = document.getElementById("dm-submit-btn")
+const dmSubmitBtnTwo = document.getElementById("dm-submit-btnTwo")
+
+
+
+
+
+
+
+
+
 const dmBtn = document.getElementById("dm-icon-a")
 const popUp = document.getElementById("pop-up")
 let input = document.getElementById("input-comment")
-const dmSubmitBtn = document.getElementById("dm-submit-btn")
-const userComment = document.querySelector(".two ")
+
+
+
+
+
+
+
+
+
 const mainComment = document.querySelector(".user-comment-input")
-let commentBtn = document.getElementById("comment-btn")
+
+
+
+
+
+
+
+
+
 const userImage = document.querySelector(".user-image")
 
 
@@ -72,7 +108,7 @@ imgTwo.addEventListener("dblclick", () => {
     likedTwoTwo.classList.toggle("like-btnTwo")
 
     if (likeCountTwo.innerHTML === "12,502 likes") {
-        likeCountTwo.innerHTML = "12,502 likes"
+        likeCountTwo.innerHTML = "12,503 likes"
         icon.classList.add("like");
         setTimeout(() => {
             icon.classList.remove("like");
@@ -113,7 +149,7 @@ likeBtnTwoTwo.addEventListener("click", function () {
 
     likedTwoTwo.classList.toggle("like-btnTwo")
     if (likeCountTwo.innerHTML === "12,502 likes") {
-        likeCountTwo.innerHTML = "12,502 likes"
+        likeCountTwo.innerHTML = "12,503 likes"
         iconTwo.classList.add("like");
         setTimeout(() => {
             iconTwo.classList.remove("like");
@@ -144,7 +180,10 @@ commentBtn.addEventListener("click", function () {
 
 })
 
-
+commentBtnTwo.addEventListener("click", function () {
+    userCommentTwo.classList.toggle("hide")
+    dmSubmitBtnTwo.classList.toggle("hide")
+})
 
 
 dmSubmitBtn.addEventListener("click", function deneme() {

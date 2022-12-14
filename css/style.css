@@ -406,6 +406,12 @@ a {
 .main-container .container section .content-container .main-image .details .buttons a #comment-btn:hover {
   fill: rgb(89, 7, 251);
 }
+.main-container .container section .content-container .main-image .details .buttons a #comment-btnTwo {
+  fill: black;
+}
+.main-container .container section .content-container .main-image .details .buttons a #comment-btnTwo:hover {
+  fill: rgb(89, 7, 251);
+}
 .main-container .container section .content-container .main-image .details .buttons a #dm-icon {
   stroke: black;
 }
@@ -413,6 +419,12 @@ a {
   stroke: rgb(16, 47, 221);
 }
 .main-container .container section .content-container .main-image .details .comment-like #like-count {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  margin-bottom: 12px;
+}
+.main-container .container section .content-container .main-image .details .comment-like #like-countTwo {
   font-weight: 700;
   font-size: 13px;
   line-height: 16px;
