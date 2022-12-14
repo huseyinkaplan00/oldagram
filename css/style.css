@@ -581,4 +581,16 @@ a {
 }
 .main-container .container section .content-container .main-image .details .comment-like .user-comment-input input:focus {
   outline: none;
+}
+
+@media only screen and (max-width: 320px) {
+  .main-container {
+    overflow: hidden !important;
+  }
+  .container {
+    width: 417px !important;
+  }
+  .headerContainer {
+    width: 417px !important;
+  }
 }/*# sourceMappingURL=style.css.map */
