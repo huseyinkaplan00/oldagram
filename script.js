@@ -10,7 +10,7 @@ const dmSubmitBtn = document.getElementById("dm-submit-btn")
 const userComment = document.querySelector(".two ")
 const mainComment = document.querySelector(".user-comment-input")
 let commentBtn = document.getElementById("comment-btn")
-
+const userImage = document.querySelector(".user-image")
 img.addEventListener("dblclick", () => {
 
 
@@ -88,4 +88,10 @@ dmSubmitBtn.addEventListener("click", function deneme() {
         userComment.innerHTML = `<span class="bold">gus1819</span>  ${valueIn}`
         dmSubmitBtn.innerHTML = ""
     }
+})
+
+userImage.addEventListener("click", function () {
+
+    let closePopUp = document.getElementById("popup-close")
+    closePopUp.classList.toggle("closepop-show")
 })

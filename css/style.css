@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap");
-.showW {
-  visibility: visible;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -99,6 +95,97 @@ a {
   justify-content: space-between;
   padding: 0 16px;
   background: #ffffff;
+}
+.main-container .container header .headerContainer .logo {
+  cursor: pointer;
+  transition: 0.5s;
+}
+.main-container .container header .headerContainer .logo:hover {
+  transform: scale(0.9);
+  opacity: 0.5;
+}
+.main-container .container header .headerContainer .user-image {
+  position: relative;
+  display: inline-block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.main-container .container header .headerContainer .user-image .close-pop-text {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  top: 52px;
+  left: -60px;
+}
+.main-container .container header .headerContainer .user-image .close-pop-text::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.main-container .container header .headerContainer .user-image .close-pop-text li {
+  list-style: none;
+  background-color: white;
+  color: black;
+  margin-bottom: 20px;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 100px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.main-container .container header .headerContainer .user-image .close-pop-text li:hover {
+  background-color: rgba(255, 255, 255, 0.338);
+  color: white;
+}
+.main-container .container header .headerContainer .user-image .closepop-show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fade 1s;
+}
+.main-container .container header .headerContainer .user-image .profile-photo {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 1s;
+  cursor: pointer;
+  border: 3px solid white;
+}
+.main-container .container header .headerContainer .user-image .profile-photo:hover {
+  transform: scale(0.9);
+  border: 3px solid black;
 }
 .main-container .container section {
   background: #ffffff;

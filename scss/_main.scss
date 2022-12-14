@@ -29,6 +29,106 @@
                 padding: 0 16px;
                 background: #ffffff;
 
+                .logo {
+                    cursor: pointer;
+                    transition: .5s;
+
+                    &:hover {
+                        transform: scale(.9);
+                        opacity: 0.5;
+                    }
+                }
+
+                .user-image {
+                    position: relative;
+                    display: inline-block;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+
+                    .close-pop-text {
+                        visibility: hidden;
+                        width: 160px;
+                        background-color: #555;
+                        color: #fff;
+                        text-align: center;
+                        border-radius: 6px;
+                        padding: 8px 0;
+                        position: absolute;
+                        z-index: 1;
+                        top: 52px;
+
+                        left: -60px;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            bottom: 100%;
+                            left: 50%;
+                            margin-left: -5px;
+                            border-width: 5px;
+                            border-style: solid;
+                            border-color: #555 transparent transparent transparent;
+                        }
+
+
+
+                        @keyframes fade {
+                            from {
+                                opacity: 0.5;
+                            }
+
+                            to {
+                                opacity: 1;
+                            }
+                        }
+
+                        li {
+                            list-style: none;
+                            background-color: white;
+                            color: black;
+                            margin-bottom: 20px;
+                            margin: auto;
+                            margin-bottom: 10px;
+                            width: 100px;
+                            border-radius: 6px;
+                            font-weight: 600;
+                            text-transform: capitalize;
+                            cursor: pointer;
+
+                            &:hover {
+                                background-color: rgba(255, 255, 255, 0.338);
+                                color: white;
+                            }
+                        }
+
+
+                    }
+
+                    .closepop-show {
+                        visibility: visible;
+                        -webkit-animation: fadeIn 1s;
+                        animation: fade 1s;
+                    }
+
+                    .profile-photo {
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        transition: 1s;
+                        cursor: pointer;
+                        border: 3px solid white;
+
+                        &:hover {
+                            transform: scale(.9);
+                            border: 3px solid black;
+                        }
+
+
+                    }
+                }
             }
         }
 
