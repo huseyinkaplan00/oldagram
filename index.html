@@ -36,7 +36,7 @@
                         <img class="profile-photo" src="./images/photo_2022-12-03_17-20-41.jpg"
                             alt="oldagram webpage user avatar photo">
                         <span class="close-pop-text" id="popup-close">
-                            <li>log out</li>
+                            <li>log out </li>
                             <li>settings</li>
                             <li>privacy</li>
 
@@ -257,19 +257,47 @@
 
                     <div class="main-image">
 
+                        <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;"
+                            version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs>
+                                <symbol id="icon-heart" viewBox="0 0 32 32">
+                                    <path
+                                        d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z">
+                                    </path>
+                                </symbol>
+                            </defs>
+                        </svg>
 
-                        <img class="main-photo" src="./images/post-image (1).svg" alt="oldagram user's shared photo">
+
+                        <div class="post">
+                            <svg class="icon icon-heart">
+                                <use xlink:href="#icon-heart"></use>
+                            </svg>
+                            <img class="main-photo" src="./images/post-image (1).svg"
+                                alt="oldagram user's shared photo">
+
+                        </div>
+
+
+
                         <div class="details">
+
                             <div class="buttons">
-                                <a href="#">
-                                    <svg id="like-btn" width="27" height="25" viewBox="0 0 27 25" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
+
+                                <a id="like-button" href="#">
+                                    <svg id="change" class="like-btn" width="27" height="25" viewBox="0 0 27 25"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M3.84587 13.5811L12.7963 23.2159C13.2572 23.712 14.0424 23.712 14.5033 23.2159L23.4537 13.5811C25.9149 10.9318 25.9149 6.63634 23.4537 3.987C20.9926 1.33767 17.0022 1.33767 14.5411 3.987L14.5033 4.02764C14.0424 4.52375 13.2572 4.52375 12.7963 4.02764L12.7585 3.987C10.2974 1.33767 6.30704 1.33767 3.84587 3.987C1.38471 6.63634 1.38471 10.9318 3.84587 13.5811Z" />
                                     </svg>
 
                                 </a>
-                                <a onclick="commentBtn()" href="#">
+
+
+
+
+
+                                <a href="#">
                                     <svg id="comment-btn" width="25" height="24" viewBox="0 0 25 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <mask id="path-1-outside-1_10_29" maskUnits="userSpaceOnUse" x="0.299622"
@@ -287,20 +315,79 @@
 
 
                                 </a>
-                                <a href="#">
+                                <a class="popup" id="dm-icon-a" href="#">
+
+
                                     <svg id="dm-icon" width="25" height="21" viewBox="0 0 25 21" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M9.65797 9.54347L11.8283 19.3097C11.9424 19.8236 12.6255 19.9344 12.8964 19.4831L22.8075 2.96445C23.0405 2.57621 22.7608 2.08228 22.308 2.08228H2.52787C1.98708 2.08228 1.73819 2.75508 2.14879 3.10702L9.65797 9.54347ZM9.65797 9.54347L22.0933 2.70404"
                                             stroke-width="2.32996" />
                                     </svg>
+                                    <div class="popup-text" id="pop-up">
+                                        <div class="popup-main-container">
+                                            <div class="one">
+                                                <div class="item">
+
+                                                    <div class="user-dm"> <img class="profile"
+                                                            src="./images/Gustave Courbet.svg" alt="">
+                                                    </div>
+                                                    <div class="name-dm">
+                                                        Gustave Courbet
+                                                    </div>
+                                                </div>
+                                                <div class="icondm-pop"><img class="dm-icon-in" src="./images/share.svg"
+                                                        alt=""> </div>
+                                            </div>
+
+
+
+                                            <div class="one">
+                                                <div class="item">
+
+                                                    <div class="user-dm"> <img class="profile"
+                                                            src="./images/Vincent van Gogh.svg" alt="">
+                                                    </div>
+                                                    <div class="name-dm">
+                                                        Vincent van Gogh
+                                                    </div>
+                                                </div>
+                                                <div class="icondm-pop"><img class="dm-icon-in" src="./images/share.svg"
+                                                        alt=""> </div>
+                                            </div>
+
+
+
+                                            <div class="one">
+                                                <div class="item">
+
+                                                    <div class="user-dm"> <img class="profile"
+                                                            src="./images/Joseph Ducreux.svg" alt="">
+                                                    </div>
+                                                    <div class="name-dm">
+                                                        Joseph Ducreux
+                                                    </div>
+                                                </div>
+                                                <div class="icondm-pop"><img class="dm-icon-in" src="./images/share.svg"
+                                                        alt=""> </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
                                 </a>
                             </div>
                             <div class="comment-like">
-                                <p id="likes">12,502 likes</p>
+                                <p id="like-count">12,502 likes</p>
                                 <p class="user-comment"><span class="bold">gus1819</span> i'm feelin a bit stressed tbh
                                 </p>
+                                <div class="user-comment-input">
+                                    <p class="user-comment two hide"><span class="bold"> gus1819 </span>
+
+                                        <input placeholder="write your comment 👌" id="input-comment" type="text">
+                                    </p>
+                                    <a id="dm-submit-btn" class="hide" href="#"> <img src="./images/share.svg"
+                                            alt=""></a>
+                                </div>
                             </div>
                         </div>
 
@@ -318,6 +405,17 @@
 
 
         </div>
+
+
+
+
+
+
+
+
+
+
+
         <div class="container">
 
 
@@ -336,17 +434,47 @@
 
 
                     <div class="main-image">
-                        <img class="main-photo" src="./images/post-image (2).svg" alt="oldagram user's shared photo">
+
+                        <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;"
+                            version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs>
+                                <symbol id="icon-heart" viewBox="0 0 32 32">
+                                    <path
+                                        d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z">
+                                    </path>
+                                </symbol>
+                            </defs>
+                        </svg>
+
+
+                        <div class="post">
+                            <svg class="icon icon-heart">
+                                <use xlink:href="#icon-heart"></use>
+                            </svg>
+                            <img class="main-photo" src="./images/post-image (2).svg"
+                                alt="oldagram user's shared photo">
+
+                        </div>
+
+
+
                         <div class="details">
+
                             <div class="buttons">
-                                <a href="#">
-                                    <svg id="like-btn" width="27" height="25" viewBox="0 0 27 25" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
+
+                                <a id="like-button" href="#">
+                                    <svg id="change" class="like-btn" width="27" height="25" viewBox="0 0 27 25"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M3.84587 13.5811L12.7963 23.2159C13.2572 23.712 14.0424 23.712 14.5033 23.2159L23.4537 13.5811C25.9149 10.9318 25.9149 6.63634 23.4537 3.987C20.9926 1.33767 17.0022 1.33767 14.5411 3.987L14.5033 4.02764C14.0424 4.52375 13.2572 4.52375 12.7963 4.02764L12.7585 3.987C10.2974 1.33767 6.30704 1.33767 3.84587 3.987C1.38471 6.63634 1.38471 10.9318 3.84587 13.5811Z" />
                                     </svg>
 
                                 </a>
+
+
+
+
+
                                 <a href="#">
                                     <svg id="comment-btn" width="25" height="24" viewBox="0 0 25 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -365,20 +493,79 @@
 
 
                                 </a>
-                                <a href="#">
+                                <a class="popup" id="dm-icon-a" href="#">
+
+
                                     <svg id="dm-icon" width="25" height="21" viewBox="0 0 25 21" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M9.65797 9.54347L11.8283 19.3097C11.9424 19.8236 12.6255 19.9344 12.8964 19.4831L22.8075 2.96445C23.0405 2.57621 22.7608 2.08228 22.308 2.08228H2.52787C1.98708 2.08228 1.73819 2.75508 2.14879 3.10702L9.65797 9.54347ZM9.65797 9.54347L22.0933 2.70404"
                                             stroke-width="2.32996" />
                                     </svg>
+                                    <div class="popup-text" id="pop-up">
+                                        <div class="popup-main-container">
+                                            <div class="one">
+                                                <div class="item">
+
+                                                    <div class="user-dm"> <img class="profile"
+                                                            src="./images/Gustave Courbet.svg" alt="">
+                                                    </div>
+                                                    <div class="name-dm">
+                                                        Gustave Courbet
+                                                    </div>
+                                                </div>
+                                                <div class="icondm-pop"><img class="dm-icon-in" src="./images/share.svg"
+                                                        alt=""> </div>
+                                            </div>
+
+
+
+                                            <div class="one">
+                                                <div class="item">
+
+                                                    <div class="user-dm"> <img class="profile"
+                                                            src="./images/Vincent van Gogh.svg" alt="">
+                                                    </div>
+                                                    <div class="name-dm">
+                                                        Vincent van Gogh
+                                                    </div>
+                                                </div>
+                                                <div class="icondm-pop"><img class="dm-icon-in" src="./images/share.svg"
+                                                        alt=""> </div>
+                                            </div>
+
+
+
+                                            <div class="one">
+                                                <div class="item">
+
+                                                    <div class="user-dm"> <img class="profile"
+                                                            src="./images/Joseph Ducreux.svg" alt="">
+                                                    </div>
+                                                    <div class="name-dm">
+                                                        Joseph Ducreux
+                                                    </div>
+                                                </div>
+                                                <div class="icondm-pop"><img class="dm-icon-in" src="./images/share.svg"
+                                                        alt=""> </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
                                 </a>
                             </div>
                             <div class="comment-like">
-                                <p id="likes">21,492 likes</p>
-                                <p class="user-comment"><span class="bold">vincey1853</span> just took a few mushrooms
-                                    lol</p>
+                                <p id="like-count">15,137 likes</p>
+                                <p class="user-comment"><span class="bold">jd1735</span> gm friends! which coin are YOU
+                                    stacking up today?? post below and WAGMI!</p>
+                                <div class="user-comment-input">
+                                    <p class="user-comment two hide"><span class="bold"> gus1819 </span>
+
+                                        <input placeholder="write your comment 👌" id="input-comment" type="text">
+                                    </p>
+                                    <a id="dm-submit-btn" class="hide" href="#"> <img src="./images/share.svg"
+                                            alt=""></a>
+                                </div>
                             </div>
                         </div>
 

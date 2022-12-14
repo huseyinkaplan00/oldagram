@@ -11,6 +11,15 @@ const userComment = document.querySelector(".two ")
 const mainComment = document.querySelector(".user-comment-input")
 let commentBtn = document.getElementById("comment-btn")
 const userImage = document.querySelector(".user-image")
+
+
+
+
+let inputArray = []
+const leadsFromLocalStorage = JSON.parse(localStorage.getItem("inputkey"))
+
+
+
 img.addEventListener("dblclick", () => {
 
 
@@ -82,11 +91,19 @@ dmSubmitBtn.addEventListener("click", function deneme() {
 
 
     let valueIn = input.value
-    if (valueIn === "") {
-        alert("Please Write Something :)")
-    } else {
-        userComment.innerHTML = `<span class="bold">gus1819</span>  ${valueIn}`
-        dmSubmitBtn.innerHTML = ""
+    let pushed = inputArray.push(valueIn)
+    let pushedLocal = localStorage.setItem("inputkey", JSON.stringify(inputArray))
+
+    let stored = JSON.parse(localStorage.getItem("inputkey"))
+    console.log(stored)
+
+    for (let i = 0; i < inputArray.length; i++) {
+        if (valueIn === "") {
+            alert("Please Write Something :)")
+        } else {
+            userComment.innerHTML = `<span class="bold">gus1819</span>  ${inputArray[i]}`
+            dmSubmitBtn.innerHTML = ""
+        }
     }
 })
 

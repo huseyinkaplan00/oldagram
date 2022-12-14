@@ -208,6 +208,7 @@ a {
   margin-right: 7px;
 }
 .main-container .container section .content-container .main-image .post {
+  cursor: pointer;
   margin: auto;
   position: relative;
   display: flex;
