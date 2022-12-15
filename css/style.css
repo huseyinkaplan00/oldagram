@@ -114,7 +114,7 @@ a {
 }
 .main-container .container header .headerContainer .user-image .close-pop-text {
   visibility: hidden;
-  width: 160px;
+  width: 116px;
   background-color: #555;
   color: #fff;
   text-align: center;
@@ -129,7 +129,7 @@ a {
   content: "";
   position: absolute;
   bottom: 100%;
-  left: 50%;
+  left: 69%;
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
@@ -581,19 +581,4 @@ a {
 }
 .main-container .container section .content-container .main-image .details .comment-like .user-comment-input input:focus {
   outline: none;
-}
-
-@media only screen and (min-width: 320px) {
-  .container {
-    width: 417px !important;
-  }
-  .close-pop-text {
-    width: 116px !important;
-  }
-  .close-pop-text::after {
-    left: 69% !important;
-  }
-  .headerContainer {
-    width: 417px !important;
-  }
 }/*# sourceMappingURL=style.css.map */
